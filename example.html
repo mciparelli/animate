@@ -1,0 +1,47 @@
+<!DOCTYPE html>	
+<html>
+<head>
+	<title>Animate Demo</title>
+	<script type="text/javascript" src="build/build.js"></script>
+</head>
+<body>
+	<p>this is a test</p>
+	<script type="text/javascript">
+	var Animate = require('animate');
+	var animate = Animate('p');
+	animate
+	// this will add keyframes to the page provided a JSON, not yet binded to the element. It does the same as if you add them yourself inside a CSS
+	.kf('bg-keyframe', {
+		0: {
+			background: 'white'
+		},
+		50: {
+			background: 'red'
+		},
+		100: {
+			background: 'white'
+		}
+	})
+	.kf('fg-keyframe', {
+		0: {
+			color: 'black',
+			'font-size': '14px'
+		},
+		70: {
+			color: 'blue',
+			'font-size': '48px'
+		}
+	})
+	// this will set the animation on the element
+	.set('bg-keyframe', '3s')
+	.start();
+
+	// start a new animation when this one ends
+	animate.on('animationEnd', function startANewOne(){
+		animate
+		.set('fg-keyframe', '5s infinite alternate')
+		.start();
+	});
+	</script>
+</body>
+</html>

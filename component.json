@@ -1,0 +1,15 @@
+{
+  "name": "animate",
+  "repo": "mciparelli/animate",
+  "description": "Convenient API for handling CSS3 animations easily with Javascript",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/query": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}
