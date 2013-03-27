@@ -5,7 +5,7 @@
 
 ## Installation
 
-    $ Component install mciparelli/animate
+    $ component install mciparelli/animate
 
 ## example
 
