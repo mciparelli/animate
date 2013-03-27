@@ -9,7 +9,7 @@
 
 ## example
 
-	
+```js
 	var Animate = require('animate');
 	var animate = Animate('p');
 	animate
@@ -20,6 +20,7 @@
 		.set('fg-keyframe', '5s infinite alternate')
 		.start();
 	});
+```
 
 ## License
 
