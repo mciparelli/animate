@@ -1,0 +1,6 @@
+{
+  "name": "animatejs",
+  "version": "1.0.0",
+  "main": "dist/browser.js",
+  "ignore": ["**/*", "!dist/browser.js"]
+}
